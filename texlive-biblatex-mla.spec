@@ -1,3 +1,9 @@
+# revision 20910
+# category Package
+# catalog-ctan /macros/latex/contrib/biblatex-contrib/biblatex-mla
+# catalog-date 2011-01-02 13:07:58 +0100
+# catalog-license lppl
+# catalog-version 0.95
 Name:		texlive-biblatex-mla
 Version:	0.95
 Release:	1
@@ -47,6 +53,7 @@ format specified by the MLA handbook.
 %doc %{_texmfdistdir}/doc/latex/biblatex-mla/doc/biblatex-mla-old.pdf
 %doc %{_texmfdistdir}/doc/latex/biblatex-mla/doc/biblatex-mla.pdf
 %doc %{_texmfdistdir}/doc/latex/biblatex-mla/doc/biblatex-mla.tex
+%doc %{_tlpkgobjdir}/*.tlpobj
 
 #-----------------------------------------------------------------------
 %prep
@@ -57,3 +64,5 @@ format specified by the MLA handbook.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
+mkdir -p %{buildroot}%{_tlpkgobjdir}
+cp -fpa tlpkg/tlpobj/*.tlpobj %{buildroot}%{_tlpkgobjdir}
