@@ -1,12 +1,12 @@
-# revision 20910
+# revision 30249
 # category Package
 # catalog-ctan /macros/latex/contrib/biblatex-contrib/biblatex-mla
-# catalog-date 2011-01-02 13:07:58 +0100
+# catalog-date 2012-02-25 10:29:30 +0100
 # catalog-license lppl
 # catalog-version 0.95
 Name:		texlive-biblatex-mla
 Version:	0.95
-Release:	2
+Release:	3
 Summary:	MLA style files for biblatex
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/biblatex-contrib/biblatex-mla
@@ -44,6 +44,10 @@ format specified by the MLA handbook.
 %doc %{_texmfdistdir}/doc/latex/biblatex-mla/doc/biblatex-mla-old.pdf
 %doc %{_texmfdistdir}/doc/latex/biblatex-mla/doc/biblatex-mla.pdf
 %doc %{_texmfdistdir}/doc/latex/biblatex-mla/doc/biblatex-mla.tex
+%doc %{_texmfdistdir}/doc/latex/biblatex-mla/doc/citation-examples.pdf
+%doc %{_texmfdistdir}/doc/latex/biblatex-mla/doc/citation-examples.tex
+%doc %{_texmfdistdir}/doc/latex/biblatex-mla/doc/handbooksamples.bib
+%doc %{_texmfdistdir}/doc/latex/biblatex-mla/doc/samples.bib
 
 #-----------------------------------------------------------------------
 %prep
@@ -54,18 +58,3 @@ format specified by the MLA handbook.
 %install
 mkdir -p %{buildroot}%{_texmfdistdir}
 cp -fpar tex doc %{buildroot}%{_texmfdistdir}
-
-
-%changelog
-* Tue Jan 03 2012 Paulo Andrade <pcpa@mandriva.com.br> 0.95-2
-+ Revision: 749667
-- Rebuild to reduce used resources
-
-* Sat Nov 05 2011 Paulo Andrade <pcpa@mandriva.com.br> 0.95-1
-+ Revision: 717928
-- texlive-biblatex-mla
-- texlive-biblatex-mla
-- texlive-biblatex-mla
-- texlive-biblatex-mla
-- texlive-biblatex-mla
-
