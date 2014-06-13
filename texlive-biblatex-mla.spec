@@ -6,7 +6,7 @@
 # catalog-version 0.95
 Name:		texlive-biblatex-mla
 Version:	0.95
-Release:	7
+Release:	8
 Summary:	MLA style files for biblatex
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/biblatex-contrib/biblatex-mla
