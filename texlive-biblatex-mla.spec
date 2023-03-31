@@ -1,6 +1,6 @@
 Name:		texlive-biblatex-mla
 Version:	62138
-Release:	1
+Release:	2
 Summary:	MLA style files for biblatex
 Group:		Publishing
 URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/biblatex-contrib/biblatex-mla
