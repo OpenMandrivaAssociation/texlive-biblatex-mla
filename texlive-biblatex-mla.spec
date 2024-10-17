@@ -3,7 +3,7 @@ Version:	62138
 Release:	2
 Summary:	MLA style files for biblatex
 Group:		Publishing
-URL:		http://www.ctan.org/tex-archive/macros/latex/contrib/biblatex-contrib/biblatex-mla
+URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/biblatex-contrib/biblatex-mla
 License:	LPPL
 Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/biblatex-mla.r%{version}.tar.xz
 Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/biblatex-mla.doc.r%{version}.tar.xz
