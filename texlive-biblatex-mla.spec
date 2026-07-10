@@ -1,40 +1,23 @@
-Name:		texlive-biblatex-mla
-Version:	62138
-Release:	2
-Summary:	MLA style files for biblatex
+%global tl_name biblatex-mla
+%global tl_revision 62138
+
+Name:		texlive-%{tl_name}
+Epoch:		1
+Version:	2.1a
+Release:	%{tl_revision}.1
+Summary:	MLA style files for BibLaTeX
 Group:		Publishing
 URL:		https://www.ctan.org/tex-archive/macros/latex/contrib/biblatex-contrib/biblatex-mla
-License:	LPPL
-Source0:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/biblatex-mla.r%{version}.tar.xz
-Source1:	http://mirrors.ctan.org/systems/texlive/tlnet/archive/biblatex-mla.doc.r%{version}.tar.xz
+License:	lppl1.3
+Source0:	https://mirrors.ctan.org/systems/texlive/tlnet/archive/biblatex-mla.r%{tl_revision}.tar.xz
+Source1:	https://mirrors.ctan.org/systems/texlive/tlnet/archive/biblatex-mla.doc.r%{tl_revision}.tar.xz
 BuildArch:	noarch
+BuildSystem:	texlive
 BuildRequires:	texlive-tlpkg
-Requires(pre):	texlive-tlpkg
-Requires(post):	texlive-kpathsea
+%texlive_base_requires
+Provides:	texlive(%{tl_name}) = %{tl_revision}
 
 %description
-The package provides biblatex support for citations in the
-format specified by the MLA handbook.
+The package provides BibLaTeX support for citations in the format
+specified by the MLA handbook.
 
-%post
-%{_sbindir}/texlive.post
-
-%postun
-if [ $1 -eq 0 ]; then
-	%{_sbindir}/texlive.post
-fi
-
-#-----------------------------------------------------------------------
-%files
-%{_texmfdistdir}/tex/latex/biblatex-mla
-%doc %{_texmfdistdir}/doc/latex/biblatex-mla
-
-#-----------------------------------------------------------------------
-%prep
-%autosetup -p1 -c -a1
-
-%build
-
-%install
-mkdir -p %{buildroot}%{_texmfdistdir}
-cp -fpar tex doc %{buildroot}%{_texmfdistdir}
